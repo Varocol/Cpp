@@ -6,17 +6,21 @@ struct Node
     int data;
     Node *next;
 };
-void List_Expand(Node *);
 Node *List_Init(int[], int);
+void List_Expand(Node *);
 void List_Print(Node *first);
+int List_Delete(Node *first, int min, int max);
 int main()
 {
     int a[8] = {1, 2, 3, 4, 5, 6, 7, 8};
-    Node *first = List_Init(a,8);
-    cout<<"扩展之前：\n";
+    Node *first = List_Init(a, 8);
+    cout << "扩展之前：\n";
     List_Print(first);
     List_Expand(first);
-    cout<<"扩展之后：\n";
+    cout << "扩展之后：\n";
+    List_Print(first);
+    List_Delete(first, 0, 7);
+    cout << "删除之后：\n";
     List_Print(first);
     system("pause");
 }
@@ -49,9 +53,32 @@ Node *List_Init(int num[], int length)
 void List_Print(Node *first)
 {
     Node *temp = first->next;
-    while(temp)
+    while (temp)
     {
-        cout<<temp->data<<endl;
+        cout << temp->data << endl;
         temp = temp->next;
     }
+}
+int List_Delete(Node *first, int min, int max)
+{
+    Node *p, *temp = first;
+    if (min >= max)
+    {
+        cout << "最小值大于等于最大值\n";
+        return 0;
+    }
+    while (temp->next)
+    {
+        p = temp->next;
+        if (p->data < max && p->data > min)
+        {
+            temp->next = p->next;
+            free(p);
+        }
+        else
+        {
+            temp = temp->next;
+        }
+    }
+    return 1;
 }
