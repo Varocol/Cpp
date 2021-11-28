@@ -23,7 +23,8 @@
         "utility": "cpp",
         "xiosbase": "cpp",
         "string": "cpp",
-        "cctype": "cpp"
+        "cctype": "cpp",
+        "limits": "cpp",
+        "xmemory": "cpp"
     },
-    "files.autoGuessEncoding": true,
 }
