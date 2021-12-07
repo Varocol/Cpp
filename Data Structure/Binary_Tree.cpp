@@ -1,6 +1,6 @@
-//¶ş²æÊ÷
-//´æ´¢½á¹¹:¶ş²æÁ´±í(²»ÓÃË³Ğò´æ´¢)
-//Ç°Ğò¡¢ÖĞĞò¡¢ºóĞòµİ¹éËã·¨ºÍ·Çµİ¹é
+//äºŒå‰æ ‘
+//å­˜å‚¨ç»“æ„:äºŒå‰é“¾è¡¨(ä¸ç”¨é¡ºåºå­˜å‚¨)
+//å‰åºã€ä¸­åºã€ååºé€’å½’ç®—æ³•å’Œéé€’å½’
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -38,17 +38,17 @@ public:
     void PostOrder();
     void LevelOrder();
 };
-//¶ş²æÊ÷Îö¹¹Ôì·½·¨
+//äºŒå‰æ ‘ææ„é€ æ–¹æ³•
 Binary_Tree::~Binary_Tree()
 {
     DestoryTree();
 }
-//¶ş²æÊ÷¹¹Ôì·½·¨
+//äºŒå‰æ ‘æ„é€ æ–¹æ³•
 Binary_Tree::Binary_Tree()
 {
     CreateTree();
 }
-//¶ş²æÊ÷´´½¨µ÷ÓÃ·½·¨(µİ¹é)
+//äºŒå‰æ ‘åˆ›å»ºè°ƒç”¨æ–¹æ³•(é€’å½’)
 Tree_Node *Binary_Tree::CreateTree(Tree_Node *root)
 {
     char ch;
@@ -66,19 +66,19 @@ Tree_Node *Binary_Tree::CreateTree(Tree_Node *root)
     }
     return root;
 }
-//¶ş²æÊ÷´´½¨·½·¨(µİ¹é)
+//äºŒå‰æ ‘åˆ›å»ºæ–¹æ³•(é€’å½’)
 void Binary_Tree::CreateTree()
 {
-    cout << "ÇëÊäÈë¶ş²æÊ÷(¿Õ½ÚµãÓÃ'#'±íÊ¾):\n";
+    cout << "è¯·è¾“å…¥äºŒå‰æ ‘(ç©ºèŠ‚ç‚¹ç”¨'#'è¡¨ç¤º):\n";
     root = CreateTree(root);
 }
-//¶ş²æÊ÷Ïú»Ùµ÷ÓÃ·½·¨
+//äºŒå‰æ ‘é”€æ¯è°ƒç”¨æ–¹æ³•
 void Binary_Tree::DestoryTree()
 {
     DestoryTree(root);
-    cout << "ÒÑÏú»Ù¶ş²æÊ÷" << endl;
+    cout << "å·²é”€æ¯äºŒå‰æ ‘" << endl;
 }
-//¶ş²æÊ÷Ïú»Ù·½·¨
+//äºŒå‰æ ‘é”€æ¯æ–¹æ³•
 void Binary_Tree::DestoryTree(Tree_Node *root)
 {
     if (root == NULL)
@@ -89,7 +89,7 @@ void Binary_Tree::DestoryTree(Tree_Node *root)
     DestoryTree(root->rchild);
     delete root;
 }
-//¶ş²æÊ÷µÄÇ°Ğò±éÀú(·Çµİ¹é)
+//äºŒå‰æ ‘çš„å‰åºéå†(éé€’å½’)
 void Binary_Tree::PreOrder()
 {
     vector<Tree_Node *> S;
@@ -111,7 +111,7 @@ void Binary_Tree::PreOrder()
     }
     cout << endl;
 }
-//¶ş²æÊ÷µÄÖĞĞò±éÀú(·Çµİ¹é)
+//äºŒå‰æ ‘çš„ä¸­åºéå†(éé€’å½’)
 void Binary_Tree::InOrder()
 {
     vector<Tree_Node *> S;
@@ -133,14 +133,14 @@ void Binary_Tree::InOrder()
     }
     cout << endl;
 }
-//¶ş²æÊ÷µÄºóĞò±éÀú(·Çµİ¹é)
+//äºŒå‰æ ‘çš„ååºéå†(éé€’å½’)
 void Binary_Tree::PostOrder()
 {
     vector<pair<Tree_Node *, int>> S;
     Tree_Node *bt = root;
     while (bt != NULL || S.size())
     {
-        //Ò»Ö±µ½×î×ó±ß
+        //ä¸€ç›´åˆ°æœ€å·¦è¾¹
         while (bt != NULL)
         {
             S.push_back(pair<Tree_Node *, int>(bt, 1));
@@ -165,7 +165,7 @@ void Binary_Tree::PostOrder()
 
     cout << endl;
 }
-//¶ş²æÊ÷µÄ²ãĞò±éÀú(·Çµİ¹é)
+//äºŒå‰æ ‘çš„å±‚åºéå†(éé€’å½’)
 void Binary_Tree::LevelOrder()
 {
     vector<Tree_Node *> S;
@@ -184,7 +184,7 @@ void Binary_Tree::LevelOrder()
     }
     cout<<endl;
 }
-//¶ş²æÊ÷µÄÇ°Ğò±éÀúµİ¹é·½·¨
+//äºŒå‰æ ‘çš„å‰åºéå†é€’å½’æ–¹æ³•
 void Binary_Tree::PreOrder_Recursion(Tree_Node *root)
 {
     if (root == NULL)
@@ -195,13 +195,13 @@ void Binary_Tree::PreOrder_Recursion(Tree_Node *root)
     PreOrder_Recursion(root->lchild);
     PreOrder_Recursion(root->rchild);
 }
-//¶ş²æÊ÷µÄÇ°Ğò±éÀúµİ¹éµÄµ÷ÓÃ·½·¨
+//äºŒå‰æ ‘çš„å‰åºéå†é€’å½’çš„è°ƒç”¨æ–¹æ³•
 void Binary_Tree::PreOrder_Recursion()
 {
     PreOrder_Recursion(root);
     cout << endl;
 }
-//¶ş²æÊ÷µÄÖĞĞò±éÀúµİ¹é·½·¨
+//äºŒå‰æ ‘çš„ä¸­åºéå†é€’å½’æ–¹æ³•
 void Binary_Tree::InOrder_Recursion(Tree_Node *root)
 {
     if (root == NULL)
@@ -212,13 +212,13 @@ void Binary_Tree::InOrder_Recursion(Tree_Node *root)
     cout << root->data;
     InOrder_Recursion(root->rchild);
 }
-//¶ş²æÊ÷µÄÖĞĞò±éÀúµİ¹éµÄµ÷ÓÃ·½·¨
+//äºŒå‰æ ‘çš„ä¸­åºéå†é€’å½’çš„è°ƒç”¨æ–¹æ³•
 void Binary_Tree::InOrder_Recursion()
 {
     InOrder_Recursion(root);
     cout << endl;
 }
-//¶ş²æÊ÷µÄºóĞò±éÀúµİ¹é·½·¨
+//äºŒå‰æ ‘çš„ååºéå†é€’å½’æ–¹æ³•
 void Binary_Tree::PostOrder_Recursion(Tree_Node *root)
 {
     if (root == NULL)
@@ -229,13 +229,13 @@ void Binary_Tree::PostOrder_Recursion(Tree_Node *root)
     PostOrder_Recursion(root->rchild);
     cout << root->data;
 }
-//¶ş²æÊ÷µÄºóĞò±éÀúµİ¹éµÄµ÷ÓÃ·½·¨
+//äºŒå‰æ ‘çš„ååºéå†é€’å½’çš„è°ƒç”¨æ–¹æ³•
 void Binary_Tree::PostOrder_Recursion()
 {
     PostOrder_Recursion(root);
     cout << endl;
 }
-//¶ş²æÊ÷µÄ²ãĞò±éÀúµİ¹é·½·¨
+//äºŒå‰æ ‘çš„å±‚åºéå†é€’å½’æ–¹æ³•
 void Binary_Tree::LevelOrder_Recursion(Tree_Node *root, int num)
 {
     if (root == NULL)
@@ -246,14 +246,14 @@ void Binary_Tree::LevelOrder_Recursion(Tree_Node *root, int num)
     LevelOrder_Recursion(root->lchild, num + 1);
     LevelOrder_Recursion(root->rchild, num + 1);
 }
-//¶ş²æÊ÷µÄ²ãĞò±éÀúµİ¹éµÄµ÷ÓÃ·½·¨
+//äºŒå‰æ ‘çš„å±‚åºéå†é€’å½’çš„è°ƒç”¨æ–¹æ³•
 void Binary_Tree::LevelOrder_Recursion()
 {
-    //Çå¿Õ
+    //æ¸…ç©º
     result.clear();
-    //µ÷ÓÃ²ãĞò±éÀúµİ¹é
+    //è°ƒç”¨å±‚åºéå†é€’å½’
     LevelOrder_Recursion(root, 1);
-    //Êä³ö
+    //è¾“å‡º
     for (int i = 0; i < result.size(); i++)
         for (int j = 0; j < result[i].size(); j++)
         {
@@ -265,27 +265,27 @@ void Binary_Tree::LevelOrder_Recursion()
 int main()
 {
     Binary_Tree tree = Binary_Tree();
-    //µİ¹é²âÊÔÑùÀı:ab#d##c##
-    cout<<"²âÊÔ±éÀúËã·¨£º"<<endl;
-    //Ç°Ğò±éÀú abdc
+    //é€’å½’æµ‹è¯•æ ·ä¾‹:ab#d##c##
+    cout<<"æµ‹è¯•éå†ç®—æ³•ï¼š"<<endl;
+    //å‰åºéå† abdc
     tree.PreOrder_Recursion();
-    //ÖĞĞò±éÀú bdac
+    //ä¸­åºéå† bdac
     tree.InOrder_Recursion();
-    //ºóĞò±éÀú dbca
+    //ååºéå† dbca
     tree.PostOrder_Recursion();
-    //²ãĞò±éÀú abcd
+    //å±‚åºéå† abcd
     tree.LevelOrder_Recursion();
     cout<<endl;
 
-    //·Çµİ¹é²âÊÔÑùÀı:ab#cd###ef#g###
-    cout<<"²âÊÔ·Ç±éÀúËã·¨£º"<<endl;
-    //Ç°Ğò±éÀú abcdefg
+    //éé€’å½’æµ‹è¯•æ ·ä¾‹:ab#cd###ef#g###
+    cout<<"æµ‹è¯•ééå†ç®—æ³•ï¼š"<<endl;
+    //å‰åºéå† abcdefg
     tree.PreOrder();
-    //ÖĞĞò±éÀú bdcafge
+    //ä¸­åºéå† bdcafge
     tree.InOrder();
-    //ºóĞò±éÀú dcbgfea
+    //ååºéå† dcbgfea
     tree.PostOrder();
-    //²ãĞò±éÀú abecfdg
+    //å±‚åºéå† abecfdg
     tree.LevelOrder();
     system("pause");
 }

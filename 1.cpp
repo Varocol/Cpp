@@ -1,34 +1,62 @@
-#include <stdio.h>
-void Print_Num_Float(int num)
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+typedef struct
 {
-    int temp = num < 0 ? -num : num;
-    //如果num为0则count直接给1
-    int count = num ? 0 : 1;
-    while (temp)
-    {
-        count++;
-        temp /= 10;
-    }
-    char *str = new char[count + 2];
-    str[count + 1] = '\0';
-    temp = num < 0 ? -num : num;
-    while (temp)
-    {
-        str[count--] = temp % 10 + '0';
-        temp /= 10;
-    }
-    if (num == 0)
-        str[1] = '0';
-    str[0] = num < 0 ? '-' : ' ';
-    printf(str);
-    delete[] str;
-}
+    string bm;
+    int num;
+} DataType;
+typedef struct
+{
+    vector<DataType> goods;
+    int length;
+} SeqList;
+
+int Partition(vector<DataType> &, int, int);
 
 int main()
 {
-    int test;
-    while (~scanf("%d", &test))
+    SeqList L;
+    //一趟降序快速排序
+    cout << "请输入表长：" << endl;
+    cin >> L.length;
+    for (int i = 0; i < L.length; i++)
     {
-        Print_Num_Float(test);
+        cin.get();
+        cout << "请输入字符串：" << endl;
+        L.goods.push_back({});
+        getline(cin, L.goods[i].bm);
+        cout << "请输入数字:" << endl;
+        cin >> L.goods[i].num;
     }
+    Partition(L.goods, 0, L.length - 1);
+    //第一趟排序结果为：
+    for (int i = 0; i < L.goods.size(); i++)
+    {
+        cout << L.goods[i].bm << " " << L.goods[i].num << endl;
+    }
+}
+
+int Partition(vector<DataType> &r, int first, int end)
+{
+    int i = first, j = end;
+    bool flag = true;
+    while (i < j)
+    {
+        if (r[i].num <= r[j].num)
+        {
+            if (flag)
+                j--;
+            else
+                i++;
+        }
+        else
+        {
+            swap(r[i], r[j]);
+            flag = !flag;
+        }
+    }
+    return i;
 }
