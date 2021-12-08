@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\Joseph_Ring.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\Joseph_Ring.dir/objects.a @CMakeFiles\Joseph_Ring.dir\objects1.rsp
+C:\MinGW\bin\x86_64-w64-mingw32-g++.exe -g -Wl,--whole-archive CMakeFiles\Joseph_Ring.dir/objects.a -Wl,--no-whole-archive -o Joseph_Ring.exe -Wl,--out-implib,libJoseph_Ring.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\Joseph_Ring.dir\linklibs.rsp

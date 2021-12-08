@@ -1,0 +1,10 @@
+^C:\USERS\VAROCOL\DESKTOP\CPP\20211207课程设计\约瑟夫环问题\BUILD\CMAKEFILES\A4DFDBE4AB728E983BACA129EB66F3A7\GENERATE.STAMP.RULE
+setlocal
+D:\CMake\bin\cmake.exe -SC:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题 -BC:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build/Joseph_Ring.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
