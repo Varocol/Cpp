@@ -1,0 +1,8 @@
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib/CMakeFiles/libs.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/src/CMakeFiles/Binary_Sort_Tree.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/src/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/src/CMakeFiles/rebuild_cache.dir

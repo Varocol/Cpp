@@ -1,0 +1,8 @@
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/lib/CMakeFiles/libs.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/lib/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/lib/CMakeFiles/rebuild_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/src/CMakeFiles/Joseph_Ring.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/src/CMakeFiles/edit_cache.dir
+C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/src/CMakeFiles/rebuild_cache.dir

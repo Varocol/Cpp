@@ -1,0 +1,12 @@
+[
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/lib",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\libs.dir\\Modules.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Joseph Ring\\lib\\Modules.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/lib/Modules.cpp"
+},
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/build/src",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/Joseph_Ring.dir/includes_CXX.rsp -g -o CMakeFiles\\Joseph_Ring.dir\\main.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Joseph Ring\\src\\main.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Joseph Ring/src/main.cpp"
+}
+]

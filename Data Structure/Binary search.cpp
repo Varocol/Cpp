@@ -3,14 +3,14 @@
 using namespace std;
 typedef enum
 {
-    up = -1,
-    down = 1
+    up = 1,
+    down = -1
 } direciton;
 //折半查找的递归和非递归
 int BinSearch1(int r[], int n, int k, direciton dir)
 {
-    int mid, low = 1, high = n;
-    while (low <= high)
+    int mid, low = 0, high = n - 1;
+    while (low < high)
     {
         mid = (low + high) / 2;
         if (dir * k < dir * r[mid])
@@ -20,13 +20,13 @@ int BinSearch1(int r[], int n, int k, direciton dir)
         else
             return mid;
     }
-    return 0;
+    return -1;
 }
 int BinSearch2(int r[], int low, int high, int k, direciton dir)
 {
     int mid;
     if (low > high)
-        return 0;
+        return -1;
     else
     {
         mid = (low + high) / 2;
@@ -57,7 +57,7 @@ int main()
     cout << "非递归方法：" << endl;
     //非递归方法
     result = BinSearch1(arr, num, k, up);
-    if (result)
+    if (result != -1)
     {
         cout << "已找到,下标为：" << result << endl;
     }
@@ -65,11 +65,11 @@ int main()
     {
         cout << "抱歉,未找到" << endl;
     }
-    cout<<endl;
+    cout << endl;
     cout << "递归方法：" << endl;
     //递归方法
-    result = BinSearch2(arr, 0, num, k, up);
-    if (result)
+    result = BinSearch2(arr, 0, num - 1, k, up);
+    if (result != -1)
     {
         cout << "已找到,下标为：" << result << endl;
     }
@@ -77,4 +77,4 @@ int main()
     {
         cout << "抱歉,未找到" << endl;
     }
-}=
+}

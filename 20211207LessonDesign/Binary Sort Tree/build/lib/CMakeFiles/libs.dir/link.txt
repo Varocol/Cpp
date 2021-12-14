@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc liblibs.a CMakeFiles/libs.dir/Binary_Sort_Tree.cpp.obj CMakeFiles/libs.dir/Binary_Tree.cpp.obj CMakeFiles/libs.dir/Modules.cpp.obj
+C:\MinGW\bin\ranlib.exe liblibs.a

@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\libs.dir\\Binary_Sort_Tree.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Binary Sort Tree\\lib\\Binary_Sort_Tree.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/lib/Binary_Sort_Tree.cpp"
+},
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\libs.dir\\Binary_Tree.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Binary Sort Tree\\lib\\Binary_Tree.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/lib/Binary_Tree.cpp"
+},
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/lib",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe   -g -o CMakeFiles\\libs.dir\\Modules.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Binary Sort Tree\\lib\\Modules.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/lib/Modules.cpp"
+},
+{
+  "directory": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/build/src",
+  "command": "C:\\MinGW\\bin\\x86_64-w64-mingw32-g++.exe  @CMakeFiles/Binary_Sort_Tree.dir/includes_CXX.rsp -g -o CMakeFiles\\Binary_Sort_Tree.dir\\main.cpp.obj -c \"C:\\Users\\Varocol\\Desktop\\Cpp\\20211207LessonDesign\\Binary Sort Tree\\src\\main.cpp\"",
+  "file": "C:/Users/Varocol/Desktop/Cpp/20211207LessonDesign/Binary Sort Tree/src/main.cpp"
+}
+]

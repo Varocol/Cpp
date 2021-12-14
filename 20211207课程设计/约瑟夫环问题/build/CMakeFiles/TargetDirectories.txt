@@ -1,4 +1,0 @@
-C:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build/CMakeFiles/ZERO_CHECK.dir
-C:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build/lib/CMakeFiles/libs.dir
-C:/Users/Varocol/Desktop/Cpp/20211207课程设计/约瑟夫环问题/build/src/CMakeFiles/Joseph_Ring.dir
