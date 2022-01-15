@@ -177,9 +177,9 @@ ret_val SortTree::InsertNode(Datatype &data)
   */
 pair<double, double> SortTree::CalASL()
 {
-  int SUCC_SUM = 0, FAIL_SUM = 0;
+  int SUCC_SUM = 0, FAIL_SUM = 0, SUCC_SIZE = count, FAIL_SIZE;
   CalASL(root, SUCC_SUM, FAIL_SUM, 1);
-  return pair<double, double>(SUCC_SUM * 1.0 / Size(), FAIL_SUM * 1.0 / (Size() + 1));
+  return pair<double, double>(SUCC_SUM * 1.0 / count, FAIL_SUM * 1.0 / fail_count);
 }
 
 /**
@@ -192,14 +192,28 @@ pair<double, double> SortTree::CalASL()
   */
 void SortTree::CalASL(Node *root, int &SUCC_SUM, int &FAIL_SUM, int level)
 {
+  static vector<Datatype> order;
+  if (level == 1)
+  {
+    //初始化中序遍历的遍历顺序以及有效查找失败的空缺个数
+    fail_count = 0;
+    order = Inorder();
+  }
   if (root == NULL)
   {
     FAIL_SUM += level;
+    fail_count++;
     return;
   }
   SUCC_SUM += level;
-  CalASL(root->left, SUCC_SUM, FAIL_SUM, level + 1);
-  CalASL(root->right, SUCC_SUM, FAIL_SUM, level + 1);
+  //找到当前数据排序后的位置,不计算紧挨着的查找失败次数
+  int pos = 0;
+  while (order[pos] != root->data && pos < count)
+    pos++;
+  if (root->left || pos == 0 || root->left == NULL && order[pos - 1] < order[pos] - 1)
+    CalASL(root->left, SUCC_SUM, FAIL_SUM, level + 1);
+  if (root->right || pos == count - 1 || root->right == NULL && order[pos + 1] > order[pos] + 1)
+    CalASL(root->right, SUCC_SUM, FAIL_SUM, level + 1);
 }
 
 /**

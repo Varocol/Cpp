@@ -5,11 +5,12 @@
 using namespace std;
 typedef int Datatype;
 
-typedef enum{
-   Success,
-   Node_Not_Found,
-   Node_Exsit
-}ret_val;
+typedef enum
+{
+    Success,
+    Node_Not_Found,
+    Node_Exsit
+} ret_val;
 
 //链表结点
 struct Node
@@ -31,6 +32,7 @@ private:
     void Inorder(Node *, vector<Datatype> &);
     void Postorder(Node *, vector<Datatype> &);
     int count = 0;
+    int fail_count;
     Node *root = NULL;
 
 public:
